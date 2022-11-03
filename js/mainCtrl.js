@@ -9,7 +9,8 @@ var WelcomeBannerDots
 var sliders;
 var curSlider = -1;
 var timeInterval = 0;
-
+var programme_Title1;
+var programme_Title2;
 
 window.addEventListener("load", function () {
   InitTabItem();
@@ -29,7 +30,7 @@ function pause() {
 function goOn() {
   if (timeInterval > 0)
     clearInterval(timeInterval);
-  timeInterval = this.setInterval(DelayDotClick, 3000);
+  timeInterval = this.setInterval(DelayDotClick, 2000);
 }
 
 
@@ -39,12 +40,14 @@ function DelayDotClick() {
 }
 
 function InitWelcomeArea() {
-  Header_area = document.querySelector(".main_header_area");
+  // Header_area = document.querySelector(".main_header_area");
   welcome_area = document.querySelector(".welcome_area");
   WelcomeBannerDots = document.querySelector(".welcome-banner-dots")
   welcomedots_1 = document.getElementById("welcomedots_1");
   welcomedots_2 = document.getElementById("welcomedots_2");
   sliders = document.querySelectorAll(".slider");
+  programme_Title1 = document.getElementById("programme-title1");
+  programme_Title2 = document.getElementById("programme-title2");
 
   welcomedots_1.onclick = function () {
     WelcomeDotClick(0);
@@ -135,6 +138,36 @@ function TabItemClick(tag) {
   contents[tag].className = "content active"
 
   curTabItem = tag;
+
+
+  if (tag === 0) {
+    programme_Title1.innerHTML = "智慧农业";
+    programme_Title2.innerHTML = "数字化大棚，数字化养殖，数字化乡村管理。数字孪生助力乡村振兴。"
+  }
+  else if (tag === 1) {
+    programme_Title1.innerHTML = "智慧园区解决方案";
+    programme_Title2.innerHTML = "高度融合园区多种数据资源，运用3D技术制作园区三维模型，对园区产业、资产、基础设施、能效、安防等领域的关键指标进行综合监测分析，打造智慧园区管理一张图，实现更加高效科学的园区管理，全面提升园区管理水平。"
+  }
+  else if (tag === 2) {
+    programme_Title1.innerHTML = "智慧文旅解决方案";
+    programme_Title2.innerHTML = "智慧文旅信息化解决方案，实时显示景区景点地图，人流状况，票务状况。实现一站式景区数字化管理方案。"
+  }
+  else if (tag === 3) {
+    programme_Title1.innerHTML = "智慧交通";
+    programme_Title2.innerHTML = "通过对站点，轨道传感器进行数据传输；结合3d和轨道交通图。实现轨道交通数字化管理全流程覆盖。"
+  }
+  else if (tag === 4) {
+    programme_Title1.innerHTML = "智慧社区";
+    programme_Title2.innerHTML = "通过对建筑，道路，水系，山体的建模；雪天雨天等天气的切换，呈现出真实的社区环境。结合人员数据，物业数据等实现社区的数字孪生解决方案。"
+  }
+  else if (tag === 5) {
+    programme_Title1.innerHTML = "智慧工厂";
+    programme_Title2.innerHTML = "结合数字孪生技术，将原料，供应，生产全流程纳入可视化监控范畴。"
+  }
+  else if (tag === 6) {
+    programme_Title1.innerHTML = "更多行业解决方案";
+    programme_Title2.innerHTML = "结合数字孪生技术，将原料，供应，生产全流程纳入可视化监控范畴。"
+  }
 }
 
 function WelcomeDotClick(tag) {
@@ -142,7 +175,7 @@ function WelcomeDotClick(tag) {
     return;
 
   welcome_area.className = tag === 0 ? "welcome_area" : "welcome_area educate-bg";
-  Header_area.className = tag === 0 ? "main_header_area" : "main_header_area header-educate-bg";
+  // Header_area.className = tag === 0 ? "main_header_area" : "main_header_area header-educate-bg";
   WelcomeBannerDots.className = tag === 0 ? "welcome-banner-dots active" : "welcome-banner-dots";
   welcomedots_1.className = tag === 0 ? "active" : "";
   welcomedots_2.className = tag === 0 ? "" : "active";
