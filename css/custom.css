@@ -208,6 +208,7 @@ div.header-wrapper {
   /* background-color: #fff; */
   transform: scale3d(1, 1, 1);
   height: 61px;
+  float: left;
 }
 
 header {
@@ -224,7 +225,7 @@ header {
   left: 0;
   right: 0;
   z-index: 9999;
-  background-color: transparent;
+  /* background-color: transparent; */
 }
 
 header .logo {
@@ -291,9 +292,10 @@ header .main_header_area {
   width: 100%;
   -webkit-transition-duration: 500ms;
   transition-duration: 500ms;
-  border-bottom: 1px solid #f5f5ff;
+  /* border-bottom: 1px solid #f5f5ff; */
   border-bottom-color: rgba(255, 255, 255, 0.1);
-  background-color: #070a57;
+  /* background-color: #070a57; */
+  margin-left: 300px;
 
 }
 
@@ -321,7 +323,7 @@ header .classynav ul li {
 
 header .classy-nav-container {
   position: relative;
-  background-color: transparent;
+  /* background-color: transparent; */
   width: 100%;
 }
 
@@ -2052,8 +2054,8 @@ div[id=tawk_5fce09d1920fc91564ce30a2] {
   width: 100%;
   position: relative;
   z-index: 1;
-  height: 518px;
-  background-color: #070a57;
+  height: 851px;
+  /* background-color: #070a57; */
 }
 
 #bingo-main .myscroll {
@@ -2476,14 +2478,89 @@ div[id=tawk_5fce09d1920fc91564ce30a2] {
   display: block;
 }
 
-#bingo-main .section-title,
-.h2 {
-  margin: 0;
-  font-weight: normal;
-  font-size: 2.38em;
-  color: #333333;
+#bingo-main .section-introduce {
+  height: 324px;
   text-align: center;
 }
+
+#bingo-main .section-title {
+  height: 200px;
+  text-align: center;
+  /* margin-top: 30px; */
+}
+
+#bingo-main .section-title1 {
+  height: 245px;
+  position: relative;
+}
+
+#bingo-main .section-title1 .section-title1_boxl {
+  width: 1050px;
+  height: 245px;
+  /* background-color: brown; */
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+#bingo-main .tabs_slider_row {
+  height: 600px;
+  position: relative;
+}
+
+.tabs_slider_box {
+  width: 1200px;
+  height: 560px;
+  /* background-color: brown; */
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.tab-wrap {
+  /* margin-left: 0px; */
+  left: 20px;
+}
+
+.main-title1-img1 {
+  float: left;
+  width: 102px;
+  height: 102px;
+  margin-top: 72px;
+}
+
+.main-title1-img2 {
+  float: left;
+  width: 700px;
+  height: 245px;
+  margin-left: 0px;
+}
+
+.programme-text {
+  position: absolute;
+  left: 190px;
+  top: 40px;
+  width: 700px;
+}
+
+.programme-type {
+  font-size: 24px;
+  color: #333;
+  font-weight: bold;
+}
+
+.programme-desc {
+  font-size: 16px;
+  color: #333;
+  margin-top: 30px;
+}
+
 
 #bingo-main .section-line {
   width: 120px;
@@ -2495,14 +2572,20 @@ div[id=tawk_5fce09d1920fc91564ce30a2] {
   background: linear-gradient(to right, #e24997, #2d2ed4);
 }
 
+#bingo-main .section-tail {
+  width: 100%;
+  min-height: 83px;
+  position: relative;
+}
+
 #bingo-main .section-industry {
   width: 100%;
-  min-height: 900px;
+  min-height: 1450px;
   position: relative;
 }
 
 #bingo-main .section-industry>.container {
-  margin-top: 40px;
+  /* margin-top: 40px; */
   position: absolute;
   top: 0;
   bottom: 0;
@@ -2515,7 +2598,9 @@ div[id=tawk_5fce09d1920fc91564ce30a2] {
   cursor: pointer;
   text-align: right;
   border-right: 2px solid #e5e5e5;
-  padding-right: 40px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 #bingo-main .section-industry .tab_item.active {
@@ -2559,6 +2644,7 @@ div[id=tawk_5fce09d1920fc91564ce30a2] {
 
 #bingo-main .section-industry .tabs_slider .content-wrap {
   position: relative;
+  left: -10px;
 }
 
 #bingo-main .section-industry .tabs_slider .content {
@@ -3271,7 +3357,8 @@ div[id=tawk_5fce09d1920fc91564ce30a2] {
 
 #bingo-main .welcome_area .slider {
   display: none;
-  height: 518px;
+  width: 100%;
+  height: 851px;
 }
 
 #bingo-main .welcome_area .slider.active {
@@ -3446,7 +3533,7 @@ header .main_header_area.header-educate-bg {
 #bingo-main .welcome_area .welcome-banner-dots {
   position: relative;
   height: 30px;
-  top: -130px;
+  top: -60px;
   text-align: center;
 }
 
@@ -12792,7 +12879,7 @@ header .header-agriculture-bg {
   height: 288px;
 }
 
-#bingo-solution-party-building .welcome_content_area .structure-frame .img-word-frame span {
+#bingo-solution-party-building .welcome_content_area .structure-frame .img-wordmarketlist-frame span {
   font-size: 24px;
   font-family: PingFang SC-Bold, PingFang SC;
   font-weight: bold;
